@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>Configuring Active Directory within Azure VMs </h1>
+<h1>Implementing Active Directory within Azure VMs </h1>
 This tutorial outlines the implementation of configuring Active Directory within Azure Virtual Machines.<br />
 
 
