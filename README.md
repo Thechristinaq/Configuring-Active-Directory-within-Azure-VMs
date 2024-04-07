@@ -22,7 +22,7 @@ This tutorial outlines the implementation of configuring Active Directory within
 - Step 1: Setup Resources in Azure
 - Step 2: Ensure Connectivity between VMs
 - Step 3: Install Active Directory Domain
-- Step 4: Creating Organizational Units (OU)
+- Step 4: Creating an Admin and Normal User Accounts
 - Step 5: Connecting to the Domain
 - Step 6: Setup Remote Desktop for Non-Admin Users
 - step 7: Testing New User Accounts  
@@ -77,4 +77,24 @@ Step 3: Install Active Directory Domain
 Connect back to DC-1 this time with your forest\username (ex: mydomain.com\dc1)
 
 
-Step 4: Creating Organizational Units (OU)
+Step 4: Creating an Admin and Normal User Accounts
+- In DC-1, click the start menu and type in Active Directory Users and Computers (ADUC)
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/58a1c779-04e8-4c5f-87f1-845ea173b9ff)
+
+- Click on mydomain.com, right click on mydomain.com to create an Organizational unit called "_EMPLOYEES" and a new Organizational unit called "_ADMINS"
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/0407989e-b4dc-43fa-bcf9-20264444b94e)
+
+- In the "ADMINS" folder, create a new employee named "Jane Doe by right clicking new then user, give the employee a username and password, then add the employee to the Domain Admins security group, by right clicking the employee name, add to a group, and type Domain admins, check name, then ok  
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/e6c29581-b10d-473e-a855-8283616b2453)
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/d3f6e405-8da5-4cf1-80fd-f8df7e93c499)
+
+- Log out of the Remote Desktop Connection to DC-1 and log back in as mydomain.com\the user or username you created (ex: mydomain.com\jane_admin or jane_admin)  
+
+
+
+
+
