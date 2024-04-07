@@ -66,3 +66,15 @@ Step 3: Install Active Directory Domain
 
 ![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/8359c491-2b61-424a-a726-5925dc5bde5c)
 
+-After the installation is complete, head over to the flag button and click "promote this server to a domain controller"
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/96469376-1996-4a04-acb1-b8c9cbe5f448)
+
+-Inside the Active Directory Domain Services Configuration Wizard window, click add a new forest and create a root domain name (I created mine as mydomain.com) (This can be anything but make sure that you remember what it is), in the next window, set up a password,  continue pressing next then install, once you have finished, a pop up will appear for you to restart
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/6b940020-f122-40c1-810d-86443a9751c0)
+
+Connect back to DC-1 this time with your forest\username (ex: mydomain.com\dc1)
+
+
+Step 4: Creating Organizational Units (OU)
