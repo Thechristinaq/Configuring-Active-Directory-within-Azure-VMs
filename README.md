@@ -31,5 +31,16 @@ This tutorial outlines the implementation of configuring Active Directory within
 
 Step 1: Setup Resources in Azure
 - Create a Domain Controller VM (DC-1) in Windows Server 2022, then create another VM in Windows 10 (Client-1) using the same resource group and Vnet
-- Set DC-1's NIC private IP address to be static
-- Ensure that both VM's are in the same Vnet 
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/3fd0733a-de31-44df-ae92-62ca67a129fa)
+
+- Click into DC-1 VM, network settings, network interface/ IP configuration and set DC-1's NIC private IP address to be static and click save 
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/7207c049-f8e7-4d3b-a7d4-2c1e9086a64d)
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/1d2f917e-aaf2-4949-bab3-2e0a4fb96181)
+
+- Ensure that both VM's are in the same Vnet
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/b291bf82-9f92-4c8a-98e5-3647b554c444)
+
