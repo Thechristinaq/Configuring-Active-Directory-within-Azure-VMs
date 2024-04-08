@@ -134,7 +134,7 @@ Step 7: Testing New User Accounts
 
 ![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/195fd943-32cc-450d-af7e-1e4cd4f30c98)
 
-- When the script is finished, open Active Directory Users and Computers to observe accounrs in the appropriate organization unit, you can see in the image below that there are random users that have been generated in the _EMPLOYEES folder
+- When the script is finished, open Active Directory Users and Computers to observe accounts in the appropriate organization unit, you can see in the image below that there are random users that have been generated in the _EMPLOYEES folder
 
 ![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/c6da46d3-45cd-44b9-be29-07dc363a20f9)
 
