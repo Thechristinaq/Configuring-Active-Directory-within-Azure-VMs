@@ -1,4 +1,4 @@
-<p align="center">
+[Script.txt](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/files/14899759/Script.txt)<p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
@@ -25,7 +25,7 @@ This tutorial outlines the implementation of configuring Active Directory within
 - Step 4: Creating an Admin and Normal User Accounts
 - Step 5: Connecting to the Domain
 - Step 6: Setup Remote Desktop for Non-Admin Users
-- step 7: Testing New User Accounts  
+- Step 7: Testing New User Accounts  
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -124,6 +124,21 @@ Step 6: Setup Remote Desktop for Non-Admin Users
 
 ![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/2bbc8324-87e5-4973-83c8-84d92d7378ee)
 
+
+Step 7: Testing New User Accounts
+- Log into DC-1 as the admin (ex: jane_admin), in the start menu search bar, type Powershell ISE and run the application as the administrator by right clicking
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/d4245965-c1d6-4f9d-adc0-b7cc6fa2a9c9)
+
+- Use a random account generating script to create users for this lab. Upload script via "Powershell ISE".  This is done to simulate employees within the company. Run the script and observe the accounts being created 
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/195fd943-32cc-450d-af7e-1e4cd4f30c98)
+
+- When the script is finished, open Active Directory Users and Computers to observe accounrs in the appropriate organization unit, you can see in the image below that there are random users that are generated in the _EMPLOYEES folder
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/c6da46d3-45cd-44b9-be29-07dc363a20f9)
+
+This concludes our lab!
 
 
 
