@@ -95,6 +95,36 @@ Step 4: Creating an Admin and Normal User Accounts
 - Log out of the Remote Desktop Connection to DC-1 and log back in as mydomain.com\the user or username you created (ex: mydomain.com\jane_admin or jane_admin)  
 
 
+Step 5: Connecting to the Domain
+- In the Azure portal, get the private address of DC-1 and then go to Client-1 VM, click network settings, network interface, DNS servers, custom, add DC-1s private IP address and save, restart Client-1 
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/2181c47f-2a6a-41fb-beaa-31636c4fd9a2)
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/69d4c265-7142-4cde-bb2b-d2c3668d4f5f)
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/3820ae8d-624a-4b19-8a65-0ccf49b858f0)
+
+- Log into Client-1 with remote desktop as the original local admin (the one you have created when you created the VM), right click on the start menu button, click system, rename this PC (advanced), change, click the domain button and enter the domain name, enter the username and password of the Admin we created in step 4, the computer will restart 
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/a1bf5e02-7284-49c2-9ee1-80888a391238)
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/403ad7fc-539c-4f28-926b-a2cffcf3cf77)
+
+- Inside DC-1 VM, verify that Client-1 shows up in Active Directory Users and Computers, inside the computer container on the root of the domain 
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/31689a89-3fc8-4c36-9d0a-25ba8617f53b)
+
+- This step is optional, you could create a new Organizational Unit called "_CLIENTS" and put Client-1 into there for organizational purposes 
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/629f475a-9700-4470-aa9f-0799220cf446)
+
+
+Step 6: Setup Remote Desktop for Non-Admin Users
+- Log into Client-1 VM as the admin that you created in step 4, right click on the start menu button and go into system, click on remote desktop which is found on the right side, click "select users that can remotely access this pc", click add, and type "Domain users" in the box, click check name and then press ok, this will allow you to log into Client-1 as a non-administrative user now   
+
+![image](https://github.com/thechristinaq/Implementing-Active-Directory-within-Azure-VMs/assets/165831241/2bbc8324-87e5-4973-83c8-84d92d7378ee)
+
+
 
 
 
